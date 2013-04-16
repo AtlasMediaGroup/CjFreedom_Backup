@@ -1,27 +1,32 @@
 <?php
-//Get Server Up Status
-$server = "109.70.149.214";
-$port = "Httpd_Port";
-$timeout = "1";
- 
+//By TheCJGCJG
+
+
 if ($server and $port and $timeout) {
-$serverup = @fsockopen("$server", $port, $errno, $errstr, $timeout);
+$cjserverup = @fsockopen("$server", $port, $errno, $errstr, $timeout);
 }
-if($serverup) {
+if($cjserverup) {
+echo '<details><summary>TotalFreedomMod</summary>';
 include 'backup/scripts/totalfreedommod.php';
-echo '<br />';
+echo '</details><br />';
+echo '<details><summary>Essentials</summary>';
 include 'backup/scripts/essentials.php';
-echo '<br />';
+echo '</details><br />';
+echo '<details><summary>Worldedit</summary>';
 include 'backup/scripts/worldedit.php';
-echo '<br />';
+echo '</details><br />';
+echo '<details><summary>BukkitTelnet</summary>';
 include 'backup/scripts/bukkittelnet.php';
-echo '<br />';
+echo '</details><br />';
+echo '<details><summary>BukkitHttpd</summary>';
 include 'backup/scripts/bukkithttpd.php';
-echo '<br />';
+echo '</details><br />';
+echo '<details><summary>Disdfreedom</summary>';
 include 'backup/scripts/disdfreedom.php';
-echo '<br />';
+echo '</details><br />';
+echo '<details><summary>Craftbukkit</summary>';
 include 'backup/scripts/bukkit.php';
-echo '<br />';
+echo '</details><br />';
 //LAST RUN SCRIPT
 echo 'Backup Last Run: ';
 $lastrun = file_get_contents('backup/backuplastrun.txt');
