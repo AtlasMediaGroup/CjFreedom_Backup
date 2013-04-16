@@ -27,6 +27,9 @@ echo '</details><br />';
 echo '<details><summary>Craftbukkit</summary>';
 include 'backup/scripts/bukkit.php';
 echo '</details><br />';
+echo '<details><summary>PluginBackups</summary>';
+include 'backup/scripts/backupzips.php';
+echo '</details><br />';
 //LAST RUN SCRIPT
 echo 'Backup Last Run: ';
 $lastrun = file_get_contents('backup/backuplastrun.txt');
