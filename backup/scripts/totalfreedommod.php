@@ -9,7 +9,7 @@ echo "Downloaded Userlist To: <a href='backup/TotalFreedomMod/userlist.yml'>back
 ?>
 <br />
 <?php
-$file = 'http://thecjgcjg.com/cjfreedom/scripts/superadminnopass.php';
+$file = ''.$address.'/plugins/TotalFreedomMod/superadmin.yml?password='.$password.'';
 $date = date('d.m.Y H:i:s');
 $current = file_get_contents($file);
 file_put_contents("backup/TotalFreedomMod/superadmin.yml", $current);
@@ -17,7 +17,7 @@ echo "Downloaded SuperAdmin List To: <a href='backup/TotalFreedomMod/superadmin.
 ?>
 <br />
 <?php
-$file = 'http://thecjgcjg.com/cjfreedom/scripts/permbannopass.php';
+$file = ''.$address.'/plugins/TotalFreedomMod/permban.yml?password='.$password.'';
 $date = date('d.m.Y H:i:s');
 $current = file_get_contents($file);
 file_put_contents("backup/TotalFreedomMod/permban.yml", $current);
