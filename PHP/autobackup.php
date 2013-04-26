@@ -19,6 +19,7 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
 } else {
     echo 'Sorry This Webpage Can Only Be Accessed By The CjFreedom Server @ mc.thecjgcjg.com'; 
     echo "<br />IP Address: ".$_SERVER['REMOTE_ADDR'];
+    echo "You Could Go And Play On The Server ;)";
 	//Enter Your Not Authorised Message
     exit;
 }
