@@ -11,5 +11,6 @@ file_put_contents("backup/backuplastrun.txt", $date);
 }
 else {
 echo "<center><b><font color='red'><h1>Server Offline! Backup Failed</h1></font></b></center>";
+echo "Woops. It appears that you screwed up...... Sowwy"
 }
 ?>
