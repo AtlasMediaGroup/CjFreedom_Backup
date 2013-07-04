@@ -48,6 +48,7 @@ if ($_POST['serverip']) {
 	$file1 = str_replace("httpdpassword",$_POST['httpdpassword'],"$file1");
 	$file1 = str_replace("httpdport",$_POST['httpdport'],"$file1");
 	$file1 = str_replace("serverip",$_POST['serverip'],"$file1");
+	$file1 = str_replace("127.0.0.1",$_POST['serverip'],"$file1");
 
 	//Put Contents Of Backup Scripts
 	file_put_contents("autobackup.php", "$file1");
