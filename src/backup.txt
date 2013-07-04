@@ -3,7 +3,7 @@ echo '<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="ht
 <link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/css/bootstrap-responsive.css">
 <link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/flat/flat-ui.css">
-<body>';
+<body><br /><br />';
 
 if ($_POST['serverip']) {
 	mkdir('backup', 0777);
