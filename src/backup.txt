@@ -10,8 +10,7 @@ if ($_POST['serverip']) {
 	mkdir('backup/WorldEdit', 0777);
 
 	//Time to get backup scripts
-	$file1 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/autobackup.php');
-	//$file1 = file_get_contents('https://dl.dropboxusercontent.com/s/72yo50ycx6sgbi8/autobackup.php?token_hash=AAFLNQBJRXxHcg35dQ0MzD-ZnbJLNMsGWN8XEbwi5BVzqA&dl=1');
+	$file1 = file_get_contents('https://raw.github.com/TheCJGCJG/CjFreedom_Backup/master/src/backup.txt');
 	$file2 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/backup.php');
 	$file3 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/backuplastrun.txt');
 	$file4 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/invalid.php');
