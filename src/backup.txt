@@ -1,25 +1,5 @@
 <?php
-echo '<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/js/bootstrap.js">
-<link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/css/bootstrap-responsive.css">
-<link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/flat/flat-ui.css">
-<!-- Load these incase I ever want to use them -->
-<script src="http://www.thecjgcjg.com/jquery/jquery.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/jquerymigrate.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/jquery2.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/application.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/bootstrap-select.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/bootstrap-switch.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/flatui-checkbox.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/flatui-radio.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/html5shiv.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/icon-font-ie7.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.placeholder.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.stacktable.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.tagsinput.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.ui.touch-punch.min.js"></script>
-<script src="http://www.thecjgcjg.com/jquery/flat/js/jquery-ui-1.10.3.custom.min.js"></script>
-<body><br /><br />';
+echo '<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/js/bootstrap.js"><link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/css/bootstrap.css"><link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/bootstrap/css/bootstrap-responsive.css"><link rel="stylesheet" type="text/css" href="http://www.thecjgcjg.com/jquery/flat/flat-ui.css"><!-- Load these incase I ever want to use them --><script src="http://www.thecjgcjg.com/jquery/jquery.js"></script><script src="http://www.thecjgcjg.com/jquery/jquerymigrate.js"></script><script src="http://www.thecjgcjg.com/jquery/jquery2.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/application.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/bootstrap-select.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/bootstrap-switch.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/flatui-checkbox.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/flatui-radio.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/html5shiv.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/icon-font-ie7.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.placeholder.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.stacktable.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.tagsinput.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/jquery.ui.touch-punch.min.js"></script><script src="http://www.thecjgcjg.com/jquery/flat/js/jquery-ui-1.10.3.custom.min.js"></script><body><br /><br />';
 
 
 if ($_POST['serverip']) {
