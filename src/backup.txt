@@ -1,0 +1,64 @@
+<?php
+
+if ($_POST['serverip']) {
+	mkdir('backup', 0777);
+	mkdir('backup/BukkitTelnet', 0777);
+	mkdir('backup/scripts', 0777);
+	mkdir('backup/Craftbukkit', 0777);
+	mkdir('backup/Essentials', 0777);
+	mkdir('backup/TotalFreedoMod', 0777);
+	mkdir('backup/WorldEdit', 0777);
+
+	//Time to get backup scripts
+	$file1 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/autobackup.php');
+	//$file1 = file_get_contents('https://dl.dropboxusercontent.com/s/72yo50ycx6sgbi8/autobackup.php?token_hash=AAFLNQBJRXxHcg35dQ0MzD-ZnbJLNMsGWN8XEbwi5BVzqA&dl=1');
+	$file2 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/backup.php');
+	$file3 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/backuplastrun.txt');
+	$file4 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/invalid.php');
+	$file5 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/backupzips.php');
+	$file6 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/bukkit.php');
+	$file7 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/bukkithttpd.php');
+	$file8 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/bukkittelnet.php');
+	$file9 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/essentials.php');
+	$file10 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/totalfreedommod.php');
+	$file11 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/worldedit.php');
+	//Add Variables Into Files
+	//Define HTTPD Variables
+	$file1 = str_replace("httpdpassword",$_POST['httpdpassword'],"$file1");
+	$file1 = str_replace("httpdport",$_POST['httpdport'],"$file1");
+	$file1 = str_replace("serverip",$_POST['serverip'],"$file1");
+
+	//Put Contents Of Backup Scripts
+	file_put_contents("autobackup.php", "$file1");
+	file_put_contents("backup/backup.php", "$file2");
+	file_put_contents("backup/backuplastrun.txt", "$file3");
+	file_put_contents("backup/invalid.php", "$file4");
+	file_put_contents("backup/scripts/backupzips.php", "$file5");
+	file_put_contents("backup/scripts/bukkit.php", "$file6");
+	file_put_contents("backup/scripts/bukkithttpd.php", "$file7");
+	file_put_contents("backup/scripts/bukkittelnet.php", "$file8");
+	file_put_contents("backup/scripts/essentials.php", "$file9");
+	file_put_contents("backup/scripts/totalfreedommod.php", "$file10");
+	file_put_contents("backup/scripts/worldedit.php", "$file11");	
+	$complete = "yes";
+}
+else {
+	if ($complete == "yes") {
+		echo '';
+		exit;
+	}
+	else {
+	echo '<form method="post" action="">
+BukkitHTTPD IP <input type="text" name="serverip"><br />
+BukkitHTTPD Port: <input type="text" name="httpdport"><br />
+BukkitHTTPD Password: <input type="text" name="httpdpassword">
+<input type="submit" value="Submit">
+</form>';
+	}
+}
+if ($complete == "yes") {
+	echo 'Process is complete Installer has completed';
+	exit;
+}
+
+?>
