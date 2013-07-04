@@ -56,7 +56,7 @@ else {
 BukkitHTTPD IP <input type="text" name="serverip"><br />
 BukkitHTTPD Port: <input type="text" name="httpdport"><br />
 BukkitHTTPD Password: <input type="text" name="httpdpassword">
-<input type="submit" value="Submit">
+<input type="submit" class="btn btn-primary" value="Submit">
 </form></body>
 <!-- Load these incase I ever want to use them -->
 <script src="http://www.thecjgcjg.com/jquery/jquery.js"></script>
