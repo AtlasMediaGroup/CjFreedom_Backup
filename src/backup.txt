@@ -95,6 +95,7 @@ else {
 BukkitHTTPD IP <input type="text" name="serverip"><br />
 BukkitHTTPD Port: <input type="text" checked name="httpdport"><br />
 BukkitHTTPD Password: <input type="password" checked name="httpdpassword"><br>
+Define plugins you do and don&quot;t want to back up:
 <input type="checkbox" name="enabled" checked value="yes">BukkitTelnet<br>
 <input type="checkbox" name="bukkittelnet" checked value="yes">BukkitTelnet<br>
 <input type="checkbox" name="craftbukkit" checked value="yes">CraftBukkit<br>
@@ -102,7 +103,7 @@ BukkitHTTPD Password: <input type="password" checked name="httpdpassword"><br>
 <input type="checkbox" name="essentials" checked value="yes">Essentials<br>
 <input type="checkbox" name="totalfreedommod" checked value="yes">TotalFreedomMod<br>
 <input type="checkbox" name="worldedit" checked value="yes">WorldEdit<br>
-<input type="checkbox" name="zip" checked value="yes">Zip Plugins<br>
+<input type="checkbox" name="zip" checked value="yes">Zip Plugins<br><br>
 <input type="submit" class="btn btn-primary" name="submit" value="Submit">
 </form></body></html>';
 	}
