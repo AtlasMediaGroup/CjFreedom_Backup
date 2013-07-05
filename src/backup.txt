@@ -110,6 +110,7 @@ Define plugins you do and don&quot;t want to back up:<br />
 }
 if ($complete == "yes") {
 	echo 'Process is complete Installer has completed</body></html>';
+	unlink('installer.php');
 	unlink('install.php');
 	exit;
 }
