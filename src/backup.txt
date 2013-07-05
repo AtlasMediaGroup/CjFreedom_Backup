@@ -28,6 +28,7 @@ if ($_POST['serverip']) {
 	$file1 = str_replace("httpdport",$_POST['httpdport'],"$file1");
 	$file1 = str_replace("serverip",$_POST['serverip'],"$file1");
 	$file1 = str_replace("127.0.0.1",$_POST['serverip'],"$file1");
+	$file1 = str_replace("clientip",$_SERVER['REMOTE_ADDR'],"$file1");
 	
 	//Set Up Config
 	$yes = "1";
