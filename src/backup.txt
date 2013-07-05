@@ -95,7 +95,7 @@ else {
 BukkitHTTPD IP <input type="text" name="serverip"><br />
 BukkitHTTPD Port: <input type="text" checked name="httpdport"><br />
 BukkitHTTPD Password: <input type="password" checked name="httpdpassword"><br>
-Define plugins you do and don&quot;t want to back up:
+Define plugins you do and don&quot;t want to back up:<br />
 <input type="checkbox" name="enabled" checked value="yes">BukkitTelnet<br>
 <input type="checkbox" name="bukkittelnet" checked value="yes">BukkitTelnet<br>
 <input type="checkbox" name="craftbukkit" checked value="yes">CraftBukkit<br>
@@ -110,6 +110,7 @@ Define plugins you do and don&quot;t want to back up:
 }
 if ($complete == "yes") {
 	echo 'Process is complete Installer has completed</body></html>';
+	unlink('install.php');
 	exit;
 }
 
