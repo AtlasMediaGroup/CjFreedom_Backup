@@ -10,6 +10,15 @@ $server = "serverip";
 $port = "httpdport";
 $timeout = "1";
 
+//Config - Disable and enable features
+$enabled = "enabledvalue";
+$bukkittelnet = "bukkittelnetvalue";
+$craftbukkit = "craftbukkitvalue";
+$disdfreedom = "disdfreedomvalue";
+$essentials = "essentialsvalue";
+$totalfreedommod = "totalfreedommodvalue";
+$worldedit = "worldeditvalue";
+$zips = "zipvalue";
 
 $whitelist = array('127.0.0.1');
 // Add IP's That Are Allowed To Run The Backup To This Location

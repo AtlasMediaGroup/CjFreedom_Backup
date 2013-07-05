@@ -28,6 +28,48 @@ if ($_POST['serverip']) {
 	$file1 = str_replace("httpdport",$_POST['httpdport'],"$file1");
 	$file1 = str_replace("serverip",$_POST['serverip'],"$file1");
 	$file1 = str_replace("127.0.0.1",$_POST['serverip'],"$file1");
+	
+	//Set Up Config
+	$yes = "1";
+	$no = "0";
+	if ($_REQUEST['submit']) {
+		if ($_REQUEST['enabled'] == "yes") {
+			$file1 = str_replace("enabledvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("enabledvalue",$no,"$file1");
+		}
+		if ($_REQUEST['bukkittelnet'] == "yes") {
+			$file1 = str_replace("bukkittelnetvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("bukkittelnetvalue",$no,"$file1");
+		}
+		if ($_REQUEST['craftbukkit'] == "yes") {
+			$file1 = str_replace("craftbukkitvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("craftbukkitvalue",$yes,"$file1");
+		}
+		if ($_REQUEST['disdfreedom'] == "yes") {
+			$file1 = str_replace("disdfreedomvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("disdfreedomvalue",$no,"$file1");	
+		}
+		if ($_REQUEST['essentials'] == "yes") {
+			$file1 = str_replace("essentialsvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("essentialsvalue",$no,"$file1");	
+		}
+		if ($_REQUEST['totalfreedommod'] == "yes") {
+			$file1 = str_replace("totalfreedommodvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("totalfreedommodvalue",$no,"$file1");	
+		}
+		if ($_REQUEST['worldedit'] == "yes") {
+			$file1 = str_replace("worldeditvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("worldeditvalue",$no,"$file1");	
+		}
+	}
+		
 
 	//Put Contents Of Backup Scripts
 	file_put_contents("autobackup.php", "$file1");
@@ -52,8 +94,16 @@ else {
 	echo '<form method="post" action="">
 BukkitHTTPD IP <input type="text" name="serverip"><br />
 BukkitHTTPD Port: <input type="text" name="httpdport"><br />
-BukkitHTTPD Password: <input type="password" name="httpdpassword">
-<input type="submit" class="btn btn-primary" value="Submit">
+BukkitHTTPD Password: <input type="password" name="httpdpassword"><br>
+<input type="checkbox" name="enabled" value="yes">BukkitTelnet<br>
+<input type="checkbox" name="bukkittelnet" value="yes">BukkitTelnet<br>
+<input type="checkbox" name="craftbukkit" value="yes">CraftBukkit<br>
+<!--<input type="checkbox" name="disdfreedom" value="yes">DisdFreedom<br>-->
+<input type="checkbox" name="essentials" value="yes">Essentials<br>
+<input type="checkbox" name="totalfreedommod" value="yes">TotalFreedomMod<br>
+<input type="checkbox" name="worldedit" value="yes">WorldEdit<br>
+<input type="checkbox" name="zip" value="yes">Zip Plugins<br>
+<input type="submit" class="btn btn-primary" name="submit" value="Submit">
 </form></body></html>';
 	}
 }
