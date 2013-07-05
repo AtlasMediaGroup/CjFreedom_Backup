@@ -113,7 +113,7 @@ Define plugins you do and don&quot;t want to back up:<br />
 	}
 }
 if ($complete == "yes") {
-	echo 'Process is complete Installer has completed</body></html>';
+	echo 'Process is complete Installer has completed <a href="autobackup.php">Run it now</a></body></html>';
 	exit;
 }
 
