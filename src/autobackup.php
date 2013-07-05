@@ -20,7 +20,7 @@ $totalfreedommod = "totalfreedommodvalue";
 $worldedit = "worldeditvalue";
 $zips = "zipvalue";
 
-$whitelist = array('127.0.0.1');
+$whitelist = array('127.0.0.1', 'clientip');
 // Add IP's That Are Allowed To Run The Backup To This Location
 if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
         include 'backup/backup.php';
