@@ -11,17 +11,17 @@ if ($_POST['serverip']) {
 	mkdir('backup/WorldEdit', 0777);
 
 	//Time to get backup scripts
-	$file1 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/autobackup.php');
-	$file2 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/backup.php');
-	$file3 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/backuplastrun.txt');
-	$file4 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/invalid.php');
-	$file5 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/backupzips.php');
-	$file6 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/bukkit.php');
-	$file7 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/bukkithttpd.php');
-	$file8 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/bukkittelnet.php');
-	$file9 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/essentials.php');
-	$file10 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/totalfreedommod.php');
-	$file11 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/PHP/backup/scripts/worldedit.php');
+	$file1 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/autobackup.php');
+	$file2 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/backup.php');
+	$file3 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/backuplastrun.txt');
+	$file4 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/invalid.php');
+	$file5 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/backupzips.php');
+	$file6 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/bukkit.php');
+	$file7 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/bukkithttpd.php');
+	$file8 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/bukkittelnet.php');
+	$file9 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/essentials.php');
+	$file10 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/totalfreedommod.php');
+	$file11 = file_get_contents('https://raw.github.com/CJServers/CJFreedom_Backup/master/src/backup/scripts/worldedit.php');
 	//Add Variables Into Files
 	//Define HTTPD Variables
 	$file1 = str_replace("httpdpassword",$_POST['httpdpassword'],"$file1");
