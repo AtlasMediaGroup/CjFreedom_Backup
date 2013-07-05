@@ -30,11 +30,6 @@ if($cjserverup) {
 			include 'backup/scripts/bukkithttpd.php';
 			echo '</details><br />';
 		}
-		if ($disdfreedom == "1") {
-			echo '<details><summary>Disdfreedom</summary>';
-			include 'backup/scripts/disdfreedom.php';
-			echo '</details><br />';
-		}
 		if ($craftbukkit == "1") {
 			echo '<details><summary>Craftbukkit</summary>';
 			include 'backup/scripts/bukkit.php';
