@@ -68,6 +68,11 @@ if ($_POST['serverip']) {
 		} else {
 			$file1 = str_replace("worldeditvalue",$no,"$file1");	
 		}
+		if ($_REQUEST['zip'] == "yes") {
+			$file1 = str_replace("zipvalue",$yes,"$file1");
+		} else {
+			$file1 = str_replace("zipvalue",$no,"$file1");	
+		}
 	}
 		
 
