@@ -7,7 +7,7 @@ if ($_POST['serverip']) {
 	mkdir('backup/scripts', 0777);
 	mkdir('backup/Craftbukkit', 0777);
 	mkdir('backup/Essentials', 0777);
-	mkdir('backup/TotalFreedoMod', 0777);
+	mkdir('backup/TotalFreedomMod', 0777);
 	mkdir('backup/WorldEdit', 0777);
 
 	//Time to get backup scripts
