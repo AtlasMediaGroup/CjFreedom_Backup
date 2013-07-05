@@ -1,7 +1,7 @@
 <?php
 $password = 'httpdpassword';
 //Enter Your Bukkit HttpD password Here
-$address = 'serverip:httpdport';
+$address = 'http://serverip:httpdport';
 //Enter Your HttpD Address Here E.G. http://8.8.8.8:12345
 
 
