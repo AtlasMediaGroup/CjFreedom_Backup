@@ -117,5 +117,5 @@ if ($complete == "yes") {
 	echo 'Process is complete Installer has completed <a href="autobackup.php">Run it now</a></body></html>';
 	exit;
 }
-
+// Finish Script
 ?>
