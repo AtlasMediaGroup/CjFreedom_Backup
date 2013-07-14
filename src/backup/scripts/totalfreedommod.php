@@ -31,3 +31,11 @@ $current = file_get_contents($file);
 file_put_contents("backup/CJFreedomMod/TotalFreedomMod.jar", $current);
 echo "Downloaded TotalFreedomMod.jar To: <a href='backup/TotalFreedomMod/TotalFreedomMod.jar'>backups/TotalFreedomMod.jar</a>" 
 ?>
+<br />
+<?php
+$file = ''.$address.'/plugins/CJFreedomMod/donator.yml?password='.$password.'';
+$date = date('d.m.Y H:i:s');
+$current = file_get_contents($file);
+file_put_contents("backup/CJFreedomMod/TotalFreedomMod.jar", $current);
+echo "Downloaded TotalFreedomMod.jar To: <a href='backup/TotalFreedomMod/TotalFreedomMod.jar'>backups/TotalFreedomMod.jar</a>" 
+?>
